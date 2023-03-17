@@ -2,7 +2,7 @@
 /**
  * main -printf
  *
- * Return =always o
+ * Return: Always 0
  */
 int main(void)
 {
