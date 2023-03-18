@@ -3,12 +3,13 @@
 #include <time.h>
 
 /**
- * main - Entry point 
+ * main- entry point
  * Return: Always 0
  */
 int main(void)
 {
 	char str;
+
 	for (str = 'a'; str <= 'z'; str++)
 	{
 		putchar(str);
