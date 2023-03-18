@@ -1,23 +1,21 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
  * main - Entry point
  *
- * Return:Always 0
+ * Return: 0
  */
 int main(void)
 {
-	char str;
+	char x;
 
-	for (str = 'a'; str <= 'z'; str++)
+	for (x = 'a'; x <= 'z'; x++)
 	{
-		putchar(str);
+		putchar(x);
 	}
-	for (str = 'A'; str <= 'Z'; str++)
+	for (x = 'A'; x <= 'Z'; x++)
 	{
-		putchar(str);
+		putchar(x);
 	}
 	putchar('\n');
 	return (0);
