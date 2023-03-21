@@ -6,7 +6,7 @@
  *Return: 0
  */
 
-int _islower(int c)
+int _islower
 {
 	char c;
 
@@ -14,6 +14,5 @@ int _islower(int c)
 		return (1);
 	else
 		return (0);
-	_putchar('\n);
-
+	_putchar('\n');
 }
