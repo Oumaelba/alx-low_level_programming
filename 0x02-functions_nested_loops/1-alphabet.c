@@ -15,12 +15,3 @@ void print_alphabet(void)
 }
 	_putchar('\n');
 }
-/**
- * main - printing
- * Return: 0
- */
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
