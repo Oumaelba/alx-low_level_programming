@@ -1,17 +1,26 @@
 #include "main.h"
+
 /**
- * main - printing alphabets
+ * print_alphabet - printing alphabets
  *
- * Return: 0
  */
 
-int main(void)
+void print_alphabet(void)
 {
 	char alpha;
-	for(alpha='a'; alpha<='z'; alpha++)
-	{ 
-	  _putchar(alpha);
-	}
+
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
+{
+	_putchar(alpha);
+}
 	_putchar('\n');
+}
+/**
+ * main - printing
+ * Return: 0
+ */
+int main(void)
+{
+	print_alphabet();
 	return (0);
-}	
+}
