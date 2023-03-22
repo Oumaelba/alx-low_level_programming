@@ -22,7 +22,7 @@ void jack_bauer(void)
 					_putchar(ma + '0');
 					_putchar(mb + '0');
 					_putchar(':');
-					_putchar(sec_a +'0');
+					_putchar(sec_a + '0');
 					_putchar(sec_b + '0');
 					_putchar('\n');
 				}
