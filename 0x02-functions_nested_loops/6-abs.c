@@ -12,5 +12,6 @@ int _abs(int);
 
 	c = _abs(d);
 	_putchar('d');
+	return (0);
 }
 
