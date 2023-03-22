@@ -7,6 +7,7 @@
  */
 
 int _abs(int);
+
 {
 	int c, d;
 
