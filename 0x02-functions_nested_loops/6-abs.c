@@ -2,17 +2,17 @@
 
 /**
  * _abs - description
- *@int: para
+ *@n: para
  * Return: 0
  */
 
-int _abs(int);
+int _abs(int n);
 
 {
-	int c, d;
-
-	c = _abs(d);
-	_putchar('d');
+	if (n < 0)
+	{
+		n = -(n);
+	}
 	return (0);
 }
 
