@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _abs - description
+ *_abs - description
  *@n: para
- * Return: 0
+ *Return: 0
  */
 
 int _abs(int n);
