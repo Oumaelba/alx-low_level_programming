@@ -4,7 +4,7 @@
  * times_table - description
  * Return: 0
  */
-void times_table(int)
+void times_table(void)
 {
 	int i = 0;
 	int j = 1;
