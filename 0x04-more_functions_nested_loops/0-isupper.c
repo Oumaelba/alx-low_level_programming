@@ -1,19 +1,18 @@
 #include "main.h"
 
 /**
-* isupper - description
-* Return: 0
-*/
+ * _isupper - description
+ * Return: 0
+ * @c: para
+ */
 int _isupper(int c)
 {
-    int c;
-    
-    if (c ='A', c >= 'Z')
-    {
-        return (1)
-    }
-    else 
-    {
-        return (0)
-    }
+	if (c >= 'A' && c <= 'Z')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
