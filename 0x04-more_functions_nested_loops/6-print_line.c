@@ -2,6 +2,7 @@
 
 /**
  * print_line - printing
+ * @n: para
  */
 void print_line(int n)
 {
