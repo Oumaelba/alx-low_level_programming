@@ -7,7 +7,7 @@
 int main(void)
 {
 	unsigned long factor = 2;
-	unsigned long our = 345;
+	unsigned long our = 612852475143;
 
 	while (factor < our)
 	{
