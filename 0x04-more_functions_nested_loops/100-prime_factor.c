@@ -6,18 +6,19 @@
  */
 int main(void)
 {
-	unsigned long factor = 1;
-	unsigned long our = 612852475143;
+	unsigned long divisor = 2;
+	unsigned long num = 612852475143;
 
-	while (factor < our)
+	while (divisor < num)
 	{
-		if  (our % factor == 0)
+		if  (num % divisor == 0)
 		{
-			our = our / factor;
-			factor = 2;
+			num = num / divisor;
+			divisor = 2;
 		}
 		else
-			factor++;
+			divisor++;
 	}
-	printf("%ld\n", our);
+	printf("%ld\n", num);
+	return (0);
 }
