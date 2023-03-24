@@ -1,11 +1,12 @@
 #include <stdio.h>
 /**
  * main - printing squares
+ * Return: 0
  */
-
-int main (void)
+int main(void)
 {
 int n;
+
 for (n = 1; n <= 99; n++)
 {
 	if
@@ -22,7 +23,7 @@ for (n = 1; n <= 99; n++)
 	{
 		printf("Buzz ");
 	}
-	else 
+	else
 		printf("%d ", n);
 }
 printf("Buzz\n");
