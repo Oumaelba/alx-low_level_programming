@@ -4,23 +4,20 @@
  * main - description
  * Return: 0
  */
-
 int main(void)
 {
-	unsigned long factor = 1;
-	unsigned long our = 612852475143;
-	unsigned long b;
+	unsigned long factor = 2;
+	unsigned long our = 345;
 
-	while (factor < 152488790)
+	while (factor < our)
 	{
 		if  (our % factor == 0)
 		{
-			if (factor % 2 != 0)
-			{
-				b = factor;
-			}
+			our = our / factor;
+			factor = 2;
 		}
-		factor++;
+		else
+			factor++;
 	}
-	printf("%ld \n", b);
+	printf("%ld\n", our);
 }
