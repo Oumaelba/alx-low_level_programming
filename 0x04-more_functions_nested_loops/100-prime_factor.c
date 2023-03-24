@@ -11,7 +11,7 @@ int main(void)
 	unsigned long our = 612852475143;
 	unsigned long b;
 
-	while (factor < 152488798)
+	while (factor < 152488790)
 	{
 		if  (our % factor == 0)
 		{
