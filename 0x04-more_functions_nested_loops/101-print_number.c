@@ -1,26 +1,33 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * print_number - printing numbers
- *@n: para
- */
-
+  * print_number - prints a number
+  * @n: the number
+  *
+  * Return: void
+  */
 void print_number(int n)
 {
-	int i = 1;
-
-	if (n < 0)
+	if (n == -2147483648)
 	{
 		_putchar('-');
-		n = n * -1;
+		_putchar('2');
+		print_number(147483648);
 	}
-	while (n / i >= 10)
+	else if (n < 0)
 	{
-		i = i * 10;
+		_putchar('-');
+		n = -n;
+		print_number(n);
 	}
-	while (i > 0)
+	else if (n < 10)
 	{
-		_putchar((n / i) % 10 + '0');
-		i = i / 10;
+		_putchar(n + 48);
+	}
+	else if (n >= 10)
+	{
+		print_number(n / 10);
+		print_number(n % 10);
 	}
 }
