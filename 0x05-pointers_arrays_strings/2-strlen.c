@@ -3,12 +3,15 @@
 /**
  * _strlen - description
  * @s: para
- * Return: length
+ * Return: i
  */
 
 int _strlen(char *s)
 {
-	int length = strlen(s);
-
-	return (length);
+	int i = 0;
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }

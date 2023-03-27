@@ -3,6 +3,13 @@
  * rev_string - descrip
  * @s: para
  */
+
+ int _strlen(char *s)
+{
+	int length = strlen(s);
+
+	return (length);
+}
 void rev_string(char *s)
 {
 	char *i = s;
