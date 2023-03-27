@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_rev - descrip
  * @s: para
@@ -13,7 +14,7 @@ void print_rev(char *s)
 	}
 	while (i >= 0)
 	{
-		_putchar(s[i])
+		_putchar("%c",s[i]);
 		i--;
 	}
 }
