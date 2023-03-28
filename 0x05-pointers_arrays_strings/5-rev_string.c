@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * rev_string - descrip
+ * _strlen - descript
  * @s: para
  *Return: i
  */
