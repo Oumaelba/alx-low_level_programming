@@ -5,10 +5,10 @@
  *Return: i
  */
 
- int _strlen(char *s)
+int _strlen(char *s)
 {
 	int i = 0;
-	
+
 	while (s[i] != '\0')
 	{
 		i++;
@@ -20,7 +20,7 @@ void rev_string(char *s)
 	char *i = s;
 	char *n = s + _strlen(s) - 1;
 	char tmp;
-	
+
 	while (i < n)
 	{
 		tmp = *i;
