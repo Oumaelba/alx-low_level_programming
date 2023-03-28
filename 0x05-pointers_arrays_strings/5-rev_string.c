@@ -6,9 +6,14 @@
 
  int _strlen(char *s)
 {
-	int length = strlen(s);
+	
+	int i = 0;
 
-	return (length);
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }
 void rev_string(char *s)
 {
