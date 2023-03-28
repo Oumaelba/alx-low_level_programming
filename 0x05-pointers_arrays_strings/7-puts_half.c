@@ -4,7 +4,8 @@
  * @str: para
  */
 void puts_half(char *str)
-int i;
+{
+	int i;
 
     i = 0;
     while (str[i])
