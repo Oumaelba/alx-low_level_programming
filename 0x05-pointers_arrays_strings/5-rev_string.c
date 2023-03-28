@@ -1,27 +1,22 @@
 #include "main.h"
 /**
  * rev_string - descrip
- * _strlen - descript
  * @s: para
  *Return: i
  */
 
-int _strlen(char *s)
-{
-	int i = 0;
-
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
 void rev_string(char *s)
 {
 	char *i = s;
-	char *n = s + _strlen(s) - 1;
+	int len = 0;
+	char *n;
 	char tmp;
 
+	while (s[len] != '\0')
+	{
+		len++;
+	}
+	n = s + len - 1;
 	while (i < n)
 	{
 		tmp = *i;
