@@ -3,6 +3,7 @@
  * _strcat - description
  * @dest: para
  * @src: para
+ * Return: dest
  */
 char *_strcat(char *dest, char *src)
 {
