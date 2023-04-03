@@ -1,17 +1,19 @@
 #include "main.h"
 #include <stdlib.h>
+
 /**
- * _strchr - descr
+ * _strchr - descrip
  * @s: para1
  * @c: para2
- * Return: null
+ * Return: a pointer to c in the string s, or NULL if not found.
  */
 
 char *_strchr(char *s, char c)
 {
-	int i = 0;
+	int i;
 
-	while (s[i] != '\0')
+	i = 0;
+	while (s[i])
 	{
 		if (s[i] == c)
 		{
