@@ -3,11 +3,9 @@
  * _strspn - descrip
  * @s: para 1
  * @accept: para 2
- * Return: store
+ * Return: s
  */
-
 char *_strpbrk(char *s, char *accept)
-
 {
 	int i = 0;
 	int j = 0;
@@ -16,19 +14,19 @@ char *_strpbrk(char *s, char *accept)
 	{
 		while (accept[j] != '\0')
 		{
-			if (s[i] == accept[j])
+			if (s[i] != accept[j])
 			{
-				break;
+				j++;
 			}
 			else
-				j++;
+			break;
 		}
-		if (accept[j] == '\0')
+		if (s[i] == accept[j])
 		{
 			break;
 		}
 		j = 0;
 		i++;
 	}
-	return (s);
+	return (s + i);
 }
