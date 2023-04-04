@@ -7,7 +7,7 @@
 void print_diagsums(int *a, int size)
 {
 	int i = 0;
-	int res1, res2;
+	unsigned int res1, res2;
 	int j = size * size;
 
 	res1 = a[0];
