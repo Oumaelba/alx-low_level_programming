@@ -7,11 +7,11 @@
 void print_diagsums(int *a, int size)
 {
 	int i = 0;
-	int res1, res2;
+	int res1;
 	int j = size * size;
+    int rest2 = 0;
 
 	res1 = a[0];
-    res2 = 0;
 	while (i < j)
 	{
 		res1 = res1 + a[i];
