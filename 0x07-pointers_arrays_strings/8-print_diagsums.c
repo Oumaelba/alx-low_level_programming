@@ -6,22 +6,19 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i = 0;
-	unsigned int res1, res2;
-	int j = size * size;
+	int i;
+	unsigned int res1;
+	unsigned int res2;
 
-	res1 = a[0];
-	while (i < j)
+	i = 0;
+	res1 = 0;
+	res2 = 0;
+
+	while (i < size)
 	{
-		res1 = res1 + a[i];
-		i = (size + i + 1);
+		res1 += a[(size * i) + i];
+		res2 += a[(size * (i + 1)) - (i + 1)];
+		i++;
 	}
-    res2 = 0;
-    i = 0;
-	while (i < j - 1)
-	{
-		res2 = res2 + a[i];
-		i = size + i - 1;
-	}
-    printf("%d, %d\n", res1, res2);
+	printf("%d, %d\n", res1, res2);
 }
