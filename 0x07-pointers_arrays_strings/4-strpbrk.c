@@ -1,6 +1,7 @@
 #include "main.h"
+#include <stddef.h>
 /**
- * _strspn - descrip
+ * _strpbrk - descrip
  * @s: para 1
  * @accept: para 2
  * Return: s
@@ -23,10 +24,11 @@ char *_strpbrk(char *s, char *accept)
 		}
 		if (s[i] == accept[j])
 		{
-			break;
+			return (s + i);
 		}
 		j = 0;
 		i++;
 	}
-	return (s + i);
+	return (NULL);
+
 }
