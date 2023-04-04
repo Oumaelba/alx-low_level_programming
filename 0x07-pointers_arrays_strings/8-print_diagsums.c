@@ -7,9 +7,8 @@
 void print_diagsums(int *a, int size)
 {
 	int i = 0;
-	int res1;
+	int res1, res2;
 	int j = size * size;
-    int rest2 = 0;
 
 	res1 = a[0];
 	while (i < j)
@@ -18,6 +17,7 @@ void print_diagsums(int *a, int size)
 		i = (size + i + 1);
 	}
 	printf("%d, ", res1);
+    res2 = 0;
 	i = 0;
 	while (i < j - 1)
 	{
