@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 /**
  * string_nconcat - Concatenates two strings up to n bytes.
  * @s1: The first string to concatenate.
@@ -18,7 +17,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	for (i = 0; s[i]; i++)
+	for (i = 0; s1[i]; i++)
 		len++;
 	concat = malloc(sizeof(char) * (len + 1));
 	if (concat == NULL)
