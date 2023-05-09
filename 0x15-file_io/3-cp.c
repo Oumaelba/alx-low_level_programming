@@ -46,7 +46,7 @@ void closing_files(int fc)
  */
 int main(int argc, char *argv[])
 {
-	int file_to, file_from, r, w, c;
+	int file_to, file_from, r, w;
 	char *buffer;
 
 	if (argc != 3)
