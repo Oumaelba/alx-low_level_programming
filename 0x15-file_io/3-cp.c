@@ -39,15 +39,13 @@ int main(int argc, char *argv[])
 	if (c == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
-		free(buffer);
-		exit(100);
+		free(buffer), exit(100);
 	}
 	c = close(file_to);
 	if (c == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_to);
-		free(buffer);
-		exit(100);
+		free(buffer), exit(100);
 	}
 	free(buffer);
 	return (0);
