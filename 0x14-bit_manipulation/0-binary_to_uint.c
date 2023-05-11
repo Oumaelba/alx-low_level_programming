@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * str_len - Returns the length of a string.
  * @str: The string to measure.
