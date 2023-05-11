@@ -1,4 +1,16 @@
 #include "main.h"
+
+/**
+ *_putchar - writes the character c to stdout
+ *@c: parametor
+ *Return: Always 0.
+ */
+int _putchar(char c)
+{
+	putchar(c);
+	return (0);
+}
+
 /**
  * print_binary - Prints the binary representation of an unsigned long integer.
  * @num: The number to print in binary.
