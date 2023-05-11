@@ -1,1 +1,2 @@
 bit manupilation
+readme file
