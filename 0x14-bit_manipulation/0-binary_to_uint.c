@@ -2,7 +2,6 @@
 /**
  * str_len - Returns the length of a string.
  * @str: The string to measure.
- *
  * Return: The length of the string.
  */
 size_t str_len(const char *str)
@@ -17,7 +16,6 @@ size_t str_len(const char *str)
 /**
  * binary_to_uint - Converts a binary number to an unsigned int.
  * @binary: A pointer to a string representing a binary number.
- *
  * Return: The unsigned int value of the binary number
  */
 unsigned int binary_to_uint(const char *binary)
