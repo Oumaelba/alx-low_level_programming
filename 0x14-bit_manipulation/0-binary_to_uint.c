@@ -23,6 +23,7 @@ unsigned int binary_to_uint(const char *binary)
 	char current_char;
 	size_t len;
 	unsigned int result;
+	size_t i;
 
 	if (binary == NULL)
 		return (0);
@@ -30,7 +31,7 @@ unsigned int binary_to_uint(const char *binary)
 	len = str_len(binary);
 	result = 0;
 
-	for (size_t i = 0; i < len; i++)
+	for (i = 0; i < len; i++)
 	{
 		current_char = binary[i];
 
