@@ -7,14 +7,14 @@
 void print_binary(unsigned long int num)
 {
 	unsigned long int temp = num;
-	int bit_count = 0;
+	int bit_count = 0, i;
 
 	while ((temp >>= 1) > 0)
 	{
 		bit_count++;
 	}
 
-	for (int i = bit_count; i >= 0; i--)
+	for (i = bit_count; i >= 0; i--)
 	{
 		if ((num >> i) & 1)
 		{
